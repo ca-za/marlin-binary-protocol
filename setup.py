@@ -13,7 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/charleswillis3/marlin-binary-protocol",
     packages=setuptools.find_packages(),
-    install_requires=["heatshrink>=0.3.2", "heatshrink2>=0.9", "pyserial>=3.4", "backports.time_perf_counter; python_version < '3.3'"],
+    install_requires=["heatshrink2>=0.9", "pyserial>=3.4", "backports.time_perf_counter; python_version < '3.3'"],
     classifiers=[
         "Programming Language :: Python :: 2.7",
         "Programming Language :: Python :: 3",
