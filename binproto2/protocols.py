@@ -91,7 +91,14 @@ class Protocol(object):
     def __init__(self, device, baud, bsize, timeout, logger = None):
         self.logger = logger or _NoneLogger()
         self.logger.info("pySerial Version: %s" % serial.VERSION)
-        self.port = serial.Serial(device, baudrate = baud, write_timeout = 0, timeout = 1)
+
+
+        if device.lower().startswith("socket://") or device.lower().startswith("rfc2217://"):
+          serial.serial_for_url(device, write_timeout = 0, timeout=1)
+        else:
+          self.port = serial.Serial(device, baudrate = baud, write_timeout = 0, timeout = 1)
+
+      
         self.device = device
         self.baud = baud
         self.block_size = int(bsize)
