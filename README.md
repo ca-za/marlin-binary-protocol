@@ -1,7 +1,7 @@
 Provides implementation of the Marlin Binary Transfer Protocol Mark II as described here:
 https://github.com/MarlinFirmware/Marlin/pull/14817
 
-Slightly changed fork of the official [marlin-binary-protocol](https://github.com/trippwill/marlin-binary-protocol) version. Removed heatshrink (v1) requirement and added support for socket and rfc2217 serial connections ([esp3d](https://esp3d.io/), [Octo-Network-Printing](https://github.com/hellerbarde/OctoPrint-Network-Printing).
+Slightly changed fork of the official [marlin-binary-protocol](https://github.com/trippwill/marlin-binary-protocol) version. Removed heatshrink (v1) requirement and added support for socket and rfc2217 serial connections ([esp3d](https://esp3d.io/), [Octo-Network-Printing](https://github.com/hellerbarde/OctoPrint-Network-Printing)).
 
 Setup:
 ```
