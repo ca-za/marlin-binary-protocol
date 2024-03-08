@@ -12,10 +12,7 @@ import serial
 from binproto2.exceptions import (ConnectionLost, FatalError, PayloadOverflow,
                                   ReadTimeout, SynchronizationError)
 
-try:
-    import heatshrink
-except ImportError:
-    import heatshrink2 as heatshrink
+import heatshrink2 as heatshrink
 
 try:
     from time import perf_counter
